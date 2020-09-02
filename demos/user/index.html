@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 , user-scalable=no">
+    <title>bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-maizi.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+</head>
+<body>
+
+<!--home-->
+<section id="home">
+    <div class="lvjing">
+        <div class="container">
+            <div class="row wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <h1>布谷鸟</h1>
+                    <p>
+                        不孤不孤不孤不孤<br/>
+                        不孤不孤不孤不孤不孤不孤不孤不孤不孤不孤不孤不孤不孤不孤不孤不孤不孤不孤不孤不孤不孤不孤不孤不孤
+                        不孤不孤不孤不孤不孤不孤不孤不孤不孤不孤不孤不孤不孤不孤不孤不孤不孤不孤不孤不孤不孤不孤不孤不孤
+            
+                    </p>
+                    <img src="images/bugu.png" class="img-responsive" alt="php"/>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--home-->
+
+
+
+
+
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.singlePageNav.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+    $(function(){
+        /*导航跳转效果插件*/
+        $('.nav').singlePageNav({
+            offset:70
+        });
+        /*小屏幕导航点击关闭菜单*/
+        $('.navbar-collapse a').click(function(){
+            $('.navbar-collapse').collapse('hide');
+        });
+        new WOW().init();
+    })
+</script>
+</body>
+</html>
